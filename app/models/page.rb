@@ -1,3 +1,3 @@
 class Page < ActiveRecord::Base
-	validetes :title, :body, presence:true
+	validates :title, :body, presence:true
 end
