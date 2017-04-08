@@ -15,6 +15,7 @@ puts "=====> Criando pagina Example"
 
 10.times do |index|
   Page.create!(
+  	slug: "titulo-#{index}",
   	title: "Titulo #{index}",
   	body: "Lorem ipsum dolor sit amet"
   	)
