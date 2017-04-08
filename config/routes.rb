@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+ 
+  
   devise_for :admins
   #get 'pages/homepage'
 
@@ -6,9 +8,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'pages#homepage'
-
-   get '/:id', to: 'pages#paginas', as: :pages
+  root 'pages#homepage'
+  resources :pages
+  # get '/:id', to: 'pages#paginas', as: :pages
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
